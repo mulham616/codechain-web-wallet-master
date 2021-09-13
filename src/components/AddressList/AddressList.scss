@@ -1,0 +1,56 @@
+@import "styles/variables.scss";
+@import "styles/mixin.scss";
+
+.Address-list {
+  padding-bottom: 100px;
+  @include respond-above(lg) {
+    .container {
+      max-width: 1300px;
+    }
+  }
+  .asset-address-container {
+    margin-top: 60px;
+  }
+  .platform-address-container {
+    margin-top: 28px;
+  }
+  .address-description {
+    color: $dark-grey;
+  }
+  .add-address-btn,
+  .mint-asset-btn,
+  .buy-CCC-btn {
+    border-radius: 5px;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.1);
+    background-color: #93a7ea3f;
+    color: $wallet-blue;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 18px;
+    height: 108px;
+    cursor: pointer;
+  }
+  .add-address-btn {
+    height: 78px;
+  }
+  .mint-asset-btn,
+  .buy-CCC-btn {
+    height: 70px;
+  }
+  .restoring {
+    font-weight: bold;
+    color: $dark-grey;
+  }
+  .deco {
+    width: 64px;
+    height: 4px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+  }
+  .deco.platform-title-deco {
+    background-color: $platform-green;
+  }
+  .deco.asset-title-deco {
+    background-color: $asset-blue;
+  }
+}
